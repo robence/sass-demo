@@ -1,0 +1,76 @@
+.App {
+  padding: 12px;
+  background-color: #ebe8e8;
+
+  /* subtract .App padding, .button-group margin */
+  height: calc(100vh - 12px - 8px - 8px);
+}
+
+.orange-container {
+  width: 400px;
+  background-image: linear-gradient(
+    141deg,
+    lightgrey 0%,
+    #1fc8db 51%,
+    #2cb5e8 75%
+  );
+  padding: 8px;
+  border: 2px solid #f5774a;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+.orange-container > h2 {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.orange-container > p {
+  margin-left: 12px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button-group {
+  margin: 8px;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-group button {
+  width: 100px;
+  height: 50px;
+  font-family: 'Times New Roman', Times, serif;
+
+  background-color: white;
+  color: #f5774a;
+  border: 2px solid #f5774a;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.button-group #left {
+  order: 1;
+}
+
+.button-group #right {
+  order: 2;
+}
+
+.button-group #left:focus {
+  background-color: #f5774a;
+  color: white;
+  border-color: white;
+  order: 2;
+  transition: 0.6s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.button-group #left:focus + #right {
+  order: 1;
+  transition: 0.6s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}

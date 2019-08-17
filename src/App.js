@@ -1,11 +1,13 @@
 import React from 'react';
+import '../node_modules/normalize.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div className="orange-container">
-        <p>Turn left to go right!</p>
+        <h2>Tale of a ghost button</h2>
+        <p>Turn Left to Go Right</p>
         <div className="button-group">
           <button id="left">Left</button>
           <button id="right">Right</button>
