@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sass-demo/static/css/main.6511529e.chunk.css",
+    "main.js": "/sass-demo/static/js/main.50b174ca.chunk.js",
+    "main.js.map": "/sass-demo/static/js/main.50b174ca.chunk.js.map",
+    "runtime~main.js": "/sass-demo/static/js/runtime~main.c3fb1345.js",
+    "runtime~main.js.map": "/sass-demo/static/js/runtime~main.c3fb1345.js.map",
+    "static/css/2.764ccc25.chunk.css": "/sass-demo/static/css/2.764ccc25.chunk.css",
+    "static/js/2.4a2d84bc.chunk.js": "/sass-demo/static/js/2.4a2d84bc.chunk.js",
+    "static/js/2.4a2d84bc.chunk.js.map": "/sass-demo/static/js/2.4a2d84bc.chunk.js.map",
+    "index.html": "/sass-demo/index.html",
+    "precache-manifest.e0715741936c88f4400065b31dd2ab66.js": "/sass-demo/precache-manifest.e0715741936c88f4400065b31dd2ab66.js",
+    "service-worker.js": "/sass-demo/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/sass-demo/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.6511529e.chunk.css.map": "/sass-demo/static/css/main.6511529e.chunk.css.map"
+  }
+}
