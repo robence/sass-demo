@@ -8,11 +8,11 @@ $shadow-color: rgba(0, 0, 0, 0.4);
 $font-setting: 'Times New Roman', Times, serif;
 
 .App {
-  padding: 12px;
+  padding: $size-l;
   background-color: #ebe8e8;
 
-  /* subtract .App padding, .button-group margin */
-  height: calc(100vh - #{$size-l} - #{$size-m} - #{$size-m});
+  /* subtract .App padding */
+  height: calc(100vh - #{$size-l} - #{$size-l});
 }
 
 .orange-container {
