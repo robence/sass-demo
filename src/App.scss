@@ -12,8 +12,8 @@ $font-setting: 'Times New Roman', Times, serif;
   box-shadow: 0 $size-m $size-l 0 $shadow-color;
 }
 
-@mixin animate() {
-  transition: 0.6s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
+@mixin animate($s) {
+  transition: $s all cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 %primary-border {
@@ -87,7 +87,7 @@ $font-setting: 'Times New Roman', Times, serif;
       }
 
       #left:focus {
-        @include animate();
+        @include animate(0.6s);
         background-color: $primary-orange;
         color: white;
         border-color: white;
@@ -95,7 +95,9 @@ $font-setting: 'Times New Roman', Times, serif;
       }
 
       #left:focus + #right {
-        @include animate();
+        @include animate(3s);
+        background-color: darken(white, 45%);
+        color: lighten(black, 10%);
         order: 1;
       }
     }
