@@ -5,6 +5,8 @@
 #### Download repository
 `git clone git@github.com:robence/sass-demo.git`
 
+#### Enter directory and run these commands in your terminal
+
 #### `npm install`
 Installs dependencies
 
