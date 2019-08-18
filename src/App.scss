@@ -1,9 +1,18 @@
+$size-xs: 2px;
+$size-m: 8px;
+$size-l: 12px;
+
+$primary-orange: #f5774a;
+$shadow-color: rgba(0, 0, 0, 0.4);
+
+$font-setting: 'Times New Roman', Times, serif;
+
 .App {
   padding: 12px;
   background-color: #ebe8e8;
 
   /* subtract .App padding, .button-group margin */
-  height: calc(100vh - 12px - 8px - 8px);
+  height: calc(100vh - #{$size-l} - #{$size-m} - #{$size-m});
 }
 
 .orange-container {
@@ -14,27 +23,27 @@
     #1fc8db 51%,
     #2cb5e8 75%
   );
-  padding: 8px;
-  border: 2px solid #f5774a;
-  border-radius: 8px;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+  padding: $size-m;
+  border: $size-xs solid $primary-orange;
+  border-radius: $size-m;
+  box-shadow: 0 $size-m $size-l 0 $shadow-color;
 }
 
 .orange-container > h2 {
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-setting;
   text-align: center;
 }
 .orange-container > p {
-  margin-left: 12px;
+  margin-left: $size-l;
   color: white;
   font-weight: 700;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-setting;
 }
 
 .button-group {
-  margin: 8px;
-  padding: 8px;
+  margin: $size-m;
+  padding: $size-m;
 
   display: flex;
   flex-direction: row;
@@ -44,13 +53,13 @@
 .button-group button {
   width: 100px;
   height: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $font-setting;
 
   background-color: white;
-  color: #f5774a;
-  border: 2px solid #f5774a;
-  border-radius: 8px;
-  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4);
+  color: $primary-orange;
+  border: $size-xs solid $primary-orange;
+  border-radius: $size-m;
+  box-shadow: 0 $size-m $size-l 0 $shadow-color;
   outline: none;
 }
 
@@ -63,7 +72,7 @@
 }
 
 .button-group #left:focus {
-  background-color: #f5774a;
+  background-color: $primary-orange;
   color: white;
   border-color: white;
   order: 2;
